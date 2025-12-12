@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bliss – Home</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "DM Sans", sans-serif;
+            background: #FDEDE5;      /* light peach */
+            color: #2C3E50;           /* soft navy */
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #89CFF0, #FFCCB3); /* blue + peach */
+            padding: 25px;
+            text-align: center;
+            color: #2C3E50;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #ffffffaa;
+            padding: 12px;
+            backdrop-filter: blur(4px);
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 18px;
+            color: #2C3E50;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #F97F51;
+        }
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            height: 60vh;
+            background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2000") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 62, 80, 0.35);
+        }
+
+        .hero h2 {
+            z-index: 10;
+            color: white;
+            font-size: 45px;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+        }
+
+        /* Section */
+        .section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #2C3E50;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #555;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* Featured Packages */
+        .package-container {
+            width: 90%;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .package-card {
+            width: 300px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .package-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .package-card .content {
+            padding: 15px;
+        }
+
+        .package-card h3 {
+            margin: 0;
+            color: #2C3E50;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 16px;
+            text-decoration: none;
+            background: #89CFF0;
+            color: #2C3E50;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #F7BFA0;
+        }
+
+        /* Footer */
+        footer {
+            background: #2C3E50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Travel Bliss</h1>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="package.html">Packages</a>
+    <a href="gallery.html">Gallery </a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <div class="hero-overlay"></div>
+    <h2>Your Trip Begins Here</h2>
+</div>
+
+<div class="section">
+    <h2>Explore The Best Travel Experiences</h2>
+    <p>
+        Find hand-picked holiday packages designed to give you unforgettable memories.
+        Whether you love beaches, mountains, or vibrant cities — we have something perfect for you.
+    </p>
+</div>
+
+<!-- Featured Packages -->
+<div class="package-container">
+
+    <!-- BEACH -->
+    <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop">
+        <div class="content">
+            <h3>Beach Getaway</h3>
+            <p>Relax with sun, sand and scenic views.</p>
+            <a href="packages.html?type=beach" class="btn">View Package</a>
+        </div>
+    </div>
+
+    <!-- MOUNTAIN -->
+    <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?q=80&w=1170&auto=format&fit=crop">
+        <div class="content">
+            <h3>Mountain Adventure</h3>
+            <p>Perfect for trekking and nature lovers.</p>
+            <a href="packages.html?type=mountain" class="btn">View Package</a>
+        </div>
+    </div>
+
+    <!-- CITY -->
+    <div class="package-card">
+        <img src="https://plus.unsplash.com/premium_photo-1664365805083-80ff9ccfde9d?q=80&w=1170&auto=format&fit=crop">
+        <div class="content">
+            <h3>City Explorer</h3>
+            <p>Cultural tours, food, nightlife and more.</p>
+            <a href="packages.html?type=city" class="btn">View Package</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Travel Bliss | Designed with ❤️
+</footer>
+
+</body>
+</html>
